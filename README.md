@@ -13,7 +13,21 @@ Validators in PoS systems and decentralized oracle networks commit resources (e.
 "I am a node" hidden here.
 
 ---
+## Origin of the Slashing Mechanism in Ethereum
 
+Ethereum introduced the concept of slashing with the advent of **Ethereum 2.0**, also known as the Beacon Chain, which transitioned Ethereum from Proof-of-Work (PoW) to Proof-of-Stake (PoS). 
+
+The **Casper FFG (Friendly Finality Gadget)** paper, published in 2017, first outlined the theoretical foundation of Ethereum's PoS model, emphasizing slashing as a critical security measure. The slashing mechanism was designed to:
+- Deter validators from misbehaving by penalizing actions like double-signing or being offline during epochs.
+- Protect the network against "Nothing at Stake" and "Long-Range Attack" vulnerabilities.
+
+In December 2020, the Beacon Chain launched, implementing slashing mechanisms to enforce validator discipline:
+- Validators who propose conflicting blocks or attest to incorrect information lose a portion of their staked ETH.
+- Severe violations result in **ejection from the validator set**, with a significant penalty applied to their stake.
+
+The success of slashing in Ethereum has inspired its adoption in other PoS networks, making it a de facto standard for maintaining trust and security in blockchain systems.
+
+---
 ## Why is Slashing Important?
 
 ### 1. **Ensuring Network Security**
